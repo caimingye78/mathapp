@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>math.lab · 高中数学</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.css" />
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+<div id="app">
+  <aside id="sidebar">
+    <div class="brand"><span class="logo">∑</span><div><b>math.lab</b><small>高中数学 · 交互训练</small></div></div>
+    <nav id="nav">
+      <a data-view="home" class="active"><i>◆</i>学习首页</a>
+      <a data-view="map"><i>▦</i>知识地图</a>
+      <a data-view="review"><i>↻</i>今日复习 <span id="dueBadge" class="badge"></span></a>
+      <a data-view="explore"><i>◎</i>交互实验室</a>
+      <a data-view="stats"><i>▲</i>我的进度</a>
+    </nav>
+    <div class="side-foot">
+      <div class="streak">🔥 <b id="streakNum">0</b> 天连续</div>
+      <button id="resetBtn" class="ghost-btn">重置数据</button>
+    </div>
+  </aside>
+
+  <main id="main">
+    <div id="view"></div>
+  </main>
+</div>
+
+<!-- KaTeX -->
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/katex.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/katex@0.16.9/dist/contrib/auto-render.min.js"></script>
+<!-- App modules -->
+<script src="js/curriculum.js"></script>
+<script src="js/generators.js"></script>
+<script src="js/srs.js"></script>
+<script src="js/viz.js"></script>
+<script src="js/input.js"></script>
+<script src="js/app.js"></script>
+</body>
+</html>
